@@ -20,7 +20,7 @@ Welcome back!  In this project we will continue to build upon the Active Directo
 
 <h2>Prerequisites</h2>
 
--  Please complete <a href="https://github.com/christianDCdev/active-directory-setup">Setup for Active Directory Infrastructure</a> before beginning this project
+-  Please complete <a href="https://github.com/cristopherb19/active-directory-setup">Setup for Active Directory Infrastructure</a> before beginning this project
 
 <h2>Objectives</h2>
 
