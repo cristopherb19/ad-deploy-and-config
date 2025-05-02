@@ -3,7 +3,7 @@
 </p>
 
 <h1>Active Directory Deployment and Configuration</h1>
-Welcome back!  In this project we will continue to build upon the Active Directory environment created in the previous project.  This project will focus on the installation and organization of active directory, domain administration, domain integration, and remote desktop access permissions.
+Welcome back! In this project we will continue to build upon the Active Directory environment created in the previous project. This project will focus on the installation and organization of active directory, domain administration, domain integration, and remote desktop access permissions.
 <br />
 
 <h2>Environments and Technologies Used</h2>
@@ -35,7 +35,7 @@ Welcome back!  In this project we will continue to build upon the Active Directo
 <h3>&#9312; Install Active Directory</h3>
 <p>
 
-- Connect to your DC-1 VM via Remote Desktop
+- Connect to your DC-1 VM via Remote Desktop: If using Mac, install Windows App.
 - Open Server Manager Application
 - Click "Add Roles and Features"
 - Click "Next" until you reach "Server Roles"
@@ -62,6 +62,7 @@ Welcome back!  In this project we will continue to build upon the Active Directo
 
 - Under "DNS options", uncheck "Create DNS delegation"
 <img src="https://imgur.com/XFBQ0Gk.png" height="80%" width="80%" alt="domain controller promotion"/>
+
 - Complete forest installation and your VM should automatically restart once installation is finished
 - Log back into DC-1 VM as a domain user by typing "mydomain.com\(your username)" as your username (Example: mydomain.com\labuser)
 <img src="https://imgur.com/lygePyx.png" height="80%" width="80%" alt="domain controller promotion"/>
@@ -81,9 +82,9 @@ Welcome back!  In this project we will continue to build upon the Active Directo
 <img src="https://imgur.com/afzsuaS.png" height="80%" width="80%" alt="AD user mydomain"/>
 - Create another organizational unit
 - Fill in the name as "_ADMINS"
-- Click on the "_ADMINS" folder
 <img src="https://imgur.com/r4WR7Xf.png" height="80%" width="80%" alt="AD user mydomain"/>
-- Within the empty field on the right, right click -> click "New" -> then click "User"
+- Click on the "_ADMINS" folder
+- Right click -> click "New" -> then click "User"
 <img src="https://imgur.com/nEdhMze.png" height="80%" width="80%" alt="new user"/>
 
 - Fill out fields for a new user named "Jane Doe" with username "jane_admin"
@@ -97,7 +98,7 @@ Welcome back!  In this project we will continue to build upon the Active Directo
 - Click "Check Names" to confirm you found the correct object name, click "Ok", then click "Apply"
 <img src="https://imgur.com/Wee3unM.png" alt="add jane to domain admins"/>
 
-- Close or logout of the DC-1 VM connection
+- Logout of the DC-1 VM connection
 - Log back into DC-1 VM as "Jane Doe" (mydomain.com\jane_admin)
 <img src="https://imgur.com/a8oEnUi.png" alt="add jane to domain admins"/>
 - From now on user "jane_admin" will be used as the admin account
@@ -109,7 +110,7 @@ Welcome back!  In this project we will continue to build upon the Active Directo
 
 <p>
 
-- Login to Client-1 VM as original local admin (in my case username = "labuser")
+- Login to Client-1 VM as original local admin (in my case, username = "labuser")
 - Within the Client-1 VM, right click Windows start button -> then click "System"
 - Click "Rename this PC (advanced)" on the right side of window
 <img src="https://imgur.com/NZq5Fah.png" height="80%" width="80%" alt="Rename PC"/>
@@ -152,8 +153,8 @@ Welcome back!  In this project we will continue to build upon the Active Directo
 
 <p>
   
-Congratulations on completing the deployment and configuration of this Active Directory project!  We should now have an active directory forest installed, a domain admin user, and our Client-1 VM should now be inside our domain.  In the next project we will populate our domain with generated users.
+Congratulations on completing the deployment and configuration of this Active Directory project!  We now have an active directory forest installed, a domain admin user, and our Client-1 VM should now be inside our domain.  In the next project we will populate our domain with generated users.
 
-- If you would like to continue to the next step in this series of Active Directory projects, please click <a href="https://github.com/christianDCdev/ad-user-generation">here</a>
+Click <a href="https://github.com/cristopherb19/ad-user-generation">here</a> to continue to the next step in this series of Active Directory projects
 
 </p>
